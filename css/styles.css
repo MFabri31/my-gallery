@@ -1,0 +1,92 @@
+:root {
+  --color-light: #a9a9a9;
+  --color-light-2: #e5e5e5;
+  --color-light-3: #bdbdbd;
+  --color-dark: #4e5150;
+
+  --main-font: "Poppins", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-size: 18px;
+  font-family: var(--main-font);
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+ul {
+  margin: 0;
+}
+
+/* -------------------
+        AVATAR
+---------------------*/
+.avatar {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar__img {
+  width: 8rem;
+  border-radius: 10px;
+}
+
+.avatar__description {
+  color: var(--color-dark);
+}
+
+.avatar__description span {
+  display: block;
+  color: var(--color-light);
+}
+
+.avatar__statistics {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.avatar__statistics div {
+  width: 7rem;
+  padding: 0.8em 1em;
+  border-radius: 10px;
+  margin: 0;
+  margin-left: 0.3rem;
+  background-color: var(--color-light-2);
+}
+
+@media screen and (min-width: 768px) {
+  .avatar__statistics div {
+    margin-left: 1rem;
+  }
+}
+
+.avatar__statistics span {
+  display: block;
+  color: var(--color-light-3);
+}
+
+/* -------------------
+        LAYOUT
+---------------------*/
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
