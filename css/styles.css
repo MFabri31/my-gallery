@@ -54,11 +54,14 @@ ul {
 
 .avatar__description {
   color: var(--color-dark);
+  text-align: center;
 }
 
 .avatar__description span {
   display: block;
   color: var(--color-light);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
 }
 
 .avatar__statistics {
@@ -130,6 +133,21 @@ img[class*="gallery__img-"] {
 
 .gallery__img-6 {
   grid-area: gallery__img-6;
+}
+
+/* -------------------
+        FOOTER
+---------------------*/
+.main-footer {
+  margin-top: 5rem;
+  padding: 1em;
+  text-align: center;
+  color: var(--color-light);
+}
+
+.main-footer__link {
+  color: inherit;
+  text-decoration: underline;
 }
 
 /* -------------------
