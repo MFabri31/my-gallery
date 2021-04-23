@@ -35,8 +35,13 @@ ul {
 /* -------------------
         AVATAR
 ---------------------*/
+
+.my-gallery {
+  padding: 0.5em;
+  margin-top: 2rem;
+}
+
 .avatar {
-  padding: 1em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,6 +85,51 @@ ul {
 .avatar__statistics span {
   display: block;
   color: var(--color-light-3);
+}
+
+/* -------------------
+        GALLERY
+---------------------*/
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-areas:
+    "gallery__img-1 gallery__img-2 gallery__img-2"
+    "gallery__img-3 gallery__img-3 gallery__img-4"
+    "gallery__img-5 gallery__img-6 gallery__img-4";
+  margin-top: 2rem;
+}
+
+img[class*="gallery__img-"] {
+  border-radius: 14px;
+  align-self: stretch;
+}
+
+.gallery__img-1 {
+  grid-area: gallery__img-1;
+}
+
+.gallery__img-2 {
+  grid-area: gallery__img-2;
+}
+
+.gallery__img-3 {
+  grid-area: gallery__img-3;
+}
+
+.gallery__img-4 {
+  grid-area: gallery__img-4;
+  /* border-radius: 8%; */
+}
+
+.gallery__img-5 {
+  grid-area: gallery__img-5;
+}
+
+.gallery__img-6 {
+  grid-area: gallery__img-6;
 }
 
 /* -------------------
